@@ -27,9 +27,13 @@ match priority:
             message = f"Note: '{task}' is a medium priority task. Consider completing it soon."
     case 'low':
         if time_bound == 'yes':
+
+            #Checks for Provide a Customized Reminder
             message = f"Reminder: '{task}' is a low priority task with a deadline today. Address if possible."
         else:
             message = f"Note: '{task}' is a low priority task. Consider completing it when you have free time."
 
 # Print the generated message
+
+
 print("\n" + message)
